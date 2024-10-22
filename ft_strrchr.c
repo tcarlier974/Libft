@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 18:03:34 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/22 22:38:44 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/22 22:51:01 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t i;
-	size_t res;
+	size_t	i;
+	size_t	res;
 
 	i = 0;
 	res = 0;

@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:16:54 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/22 22:37:19 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/22 22:54:52 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char *s_p;
-	size_t i;
+	unsigned char	*s_p;
+	size_t			i;
 
 	s_p = (unsigned char *)s;
 	i = 0;

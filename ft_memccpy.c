@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:59:16 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/22 22:37:13 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/22 22:52:38 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	unsigned char *dst_p;
-	unsigned char *src_p;
-	size_t i;
+	unsigned char	*dst_p;
+	unsigned char	*src_p;
+	size_t			i;
 
 	dst_p = (unsigned char *)dst;
 	src_p = (unsigned char *)src;
