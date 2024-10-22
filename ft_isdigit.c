@@ -6,13 +6,13 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:27:25 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/16 11:33:46 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/22 22:37:04 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    return (c <= '9' && c >= '0');
+	return (c <= '9' && c >= '0');
 }

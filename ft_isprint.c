@@ -6,13 +6,13 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:36:32 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/16 11:37:45 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/22 22:37:09 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    return (c <= 126 && c >= 32);
+	return (c <= 126 && c >= 32);
 }

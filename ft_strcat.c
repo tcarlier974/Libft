@@ -6,27 +6,27 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:35:48 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/16 16:26:03 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/22 22:37:44 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
-    size_t  i;
-    size_t  j;
+	size_t i;
+	size_t j;
 
-    i = 0;
-    j = 0;
-    while (s1[j])
-        j++;
-    while (s2[i])
-    {
-        s1[j] = s2[i];
-        i++;
-        j++;
-    }
-    s1[j] = '\0';
-    return (s1);
+	i = 0;
+	j = 0;
+	while (s1[j])
+		j++;
+	while (s2[i])
+	{
+		s1[j] = s2[i];
+		i++;
+		j++;
+	}
+	s1[j] = '\0';
+	return (s1);
 }
