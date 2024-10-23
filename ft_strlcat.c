@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:56:08 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/22 23:22:43 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/23 19:18:58 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	len;
 
 	i = 0;
+	if (size == 0)
+		return (ft_strlen(src));
 	len = (size_t)ft_strlen(dest);
 	if (size <= len)
 		return (size + ft_strlen(src));
