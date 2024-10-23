@@ -48,3 +48,6 @@ fclean : clean
 	rm -rf $(OBJ)
 
 re : fclean all
+
+dev :
+	make fclean;git add .; git commit -m 'auto update';git push;cd ../tester; make m;cd ../libft
