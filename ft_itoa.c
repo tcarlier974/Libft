@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 19:28:24 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 01:43:52 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 01:44:22 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ char	*ft_itoa(int n)
 	}
 	res[sign] = i + '0';
 	res[count_nb(n)] = '\0';
-	printf("%d\n", count_nb(n));
 	return (res);
 }
 
