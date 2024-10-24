@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:54:39 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 19:17:48 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 19:22:01 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,14 +62,14 @@ char    **ft_split(char const *s1, char c)
     res = (char**)malloc((count_words((char*)s1, c) + 1) * sizeof(char*));
     if (!res)
         return (NULL);
-    while (s1[s])
+    while (k < count_words((char*)s1, c) && s1[s])
     {
         while (s1[s] == c)
             s++;
         e = s;
         while (s1[e] != c && s1[e])
             e++;
-        res[k] = ft_strndup((char*)s1 + s, e);
+        res[k] = ft_strndup((char*)s1 + s, e - s);
         k++;
         s = e;
     }
