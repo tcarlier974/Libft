@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:09:42 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 18:26:42 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:27:06 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*res;
 	int		len;
-	int		i;
-	int		j;
+	size_t	i;
+	size_t	j;
 	
 	i = 0;
 	j = 0;
