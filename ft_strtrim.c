@@ -6,13 +6,13 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:30:04 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 18:51:56 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:53:29 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_incharset(char s, char *charset)
+int	ft_incharset(char s, char const *charset)
 {
 	int	i;
 
