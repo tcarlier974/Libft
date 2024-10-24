@@ -29,6 +29,7 @@ SRC = ft_memset.c \
 			ft_strlcpy.c \
 			ft_calloc.c \
 			ft_substr.c \
+			ft_strjoin.c \
 
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
