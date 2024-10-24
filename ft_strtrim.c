@@ -6,36 +6,40 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:30:04 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 18:37:59 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:51:33 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+int	ft_incharset(char s, char *charset)
+{
+	int	i;
+
+	i = 0;
+	while (charset[i])
+	{
+		if (charset[i] == s)
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
 char    *ft_strtrim(char const *s1, char const *set)
 {
-    char	*res;
-    int		count;
-    int		i;
+    int	i;
+	int	j;
 
-    i = 0;
-	count = 0;
-	while (s1[i])
-	{
-		if (s1[i] == set[0] || s1[i] == set[ft_strlen(set) - 1])
-			count++;
-		i++;
-	}
-	res = (char*)malloc(ft_strlen(s1) - count - 1);
-	if (!res)
-		return (NULL);
 	i = 0;
-	while (s1[i])
+	j = (int)(ft_strlen(s) - 1);
+	while (ft_incharset(s1[i], set))
 	{
-		if (s1[i] != set[0] && s1[i] != set[ft_strlen(set) - 1])
-			res[i] = s1[i];
 		i++;
 	}
-	res[i] = '\0';
-	return (res);
+	while (ft_incharset(s1[j], set))
+	{
+		j--;
+	}
+	return (ft_substr(s, i, (j - i - 1)));
 }
