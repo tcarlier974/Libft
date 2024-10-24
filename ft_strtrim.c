@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:30:04 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 18:37:03 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:37:59 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ char    *ft_strtrim(char const *s1, char const *set)
     int		i;
 
     i = 0;
+	count = 0;
 	while (s1[i])
 	{
 		if (s1[i] == set[0] || s1[i] == set[ft_strlen(set) - 1])
