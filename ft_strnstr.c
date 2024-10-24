@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 18:27:37 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/23 19:35:23 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 17:31:15 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
-	if (!haystack && !needle && len == 0)
+	if ((!haystack || !needle) && len == 0)
 		return (NULL);
 	if (*needle == '\0')
 		return ((char *)haystack);
@@ -26,12 +26,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		return (ft_strnstr(haystack, needle, ft_strlen((char *)haystack)));
 	if (len == 1 && haystack[0] == needle[0])
 		return ((char *)haystack);
-	while ((char)haystack[i] != '\0' && i < (int)len)
+	while ((char)haystack[i] != '\0' && i < len)
 	{
 		j = 0;
-		while ((char)haystack[i + j] == (char)needle[j])
+		while ((char)haystack[i + j] == (char)needle[j] && i + j < len)
 		{
-			if (j == (int)ft_strlen((char *)needle) - 1)
+			if (j == ft_strlen((char *)needle) - 1)
 				return ((char *)(haystack + i));
 			j++;
 		}
