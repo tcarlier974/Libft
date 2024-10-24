@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:30:04 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 18:53:29 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:53:40 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char    *ft_strtrim(char const *s1, char const *set)
 	int	j;
 
 	i = 0;
-	j = (int)(ft_strlen(s) - 1);
+	j = (int)(ft_strlen(s1) - 1);
 	while (ft_incharset(s1[i], set))
 	{
 		i++;
