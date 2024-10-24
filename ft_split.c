@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:54:39 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 19:09:48 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 19:11:14 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,6 @@ char    **ft_split(char const *s1, char c)
         k++;
         s = e;
     }
-    res[k] = "\0";
+    res[k] = 0;
     return (res);
 }
