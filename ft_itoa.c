@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 19:28:24 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 19:55:35 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 19:56:09 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	count_nb(int n)
 		i = i / 10;
 		count++;
 	}
-	return (count + 1);
+	return (count);
 }
 
 char	*ft_itoa(int n)
