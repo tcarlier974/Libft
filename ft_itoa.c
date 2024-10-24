@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 19:28:24 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 20:15:30 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 01:43:52 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int	count_nb(int n)
 		i = i / 10;
 		count++;
 	}
-	printf("%d : ", count);
 	return (count + 1);
 }
 
@@ -54,7 +53,6 @@ char	*ft_itoa(int n)
 	while (i > 9)
 	{
 		res[count_nb(n) - k - sign] = i % 10 + '0';
-		printf("%c\n", res[count_nb(n) - k - sign]);
 		i = i / 10;
 		k++;
 	}
@@ -64,8 +62,8 @@ char	*ft_itoa(int n)
 	return (res);
 }
 
-int main(void)
+/*int main(void)
 {
 	printf("%s\n", ft_itoa(301));
 	return (0);
-}
+}*/
