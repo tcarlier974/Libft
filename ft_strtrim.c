@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:30:04 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 18:51:33 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:51:56 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,5 @@ char    *ft_strtrim(char const *s1, char const *set)
 	{
 		j--;
 	}
-	return (ft_substr(s, i, (j - i - 1)));
+	return (ft_substr(s1, i, (j - i - 1)));
 }
