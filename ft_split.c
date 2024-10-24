@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:54:39 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 19:16:12 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 19:17:01 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ int count_words(char *s, char c)
             count++;
         while (s[i] != c && s[i])
             i++;
-        if (s[i] == '\0')
-            count++;
     }
+    if (s[i - 1] != c)
+        count++;
     return (count);
 }
 char	*ft_strndup(char *s1, int len)
