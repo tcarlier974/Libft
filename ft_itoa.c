@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 19:28:24 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 01:50:39 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 01:53:16 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,27 +36,26 @@ int	count_nb(int n)
 char	*ft_itoa(int n)
 {
 	char		*res;
-	long int	i;
 	int			k;
 	int			sign;
 
 	res = (char*)malloc(count_nb(n) * sizeof(char) + 1);
-	i = n;
 	k = 0;
+	(long int)n;
 	sign = 0;
 	if (n < 0)
 	{
-		i *= -1;
+		n *= -1;
 		res[k] = '-';
 		sign = 1;
 	}
-	while (i > 9)
+	while (n > 9)
 	{
-		res[count_nb(n) - k - 1] = i % 10 + '0';
-		i = i / 10;
+		res[count_nb(n) - k - 1] = n % 10 + '0';
+		n = n / 10;
 		k++;
 	}
-	res[sign] = i + '0';
+	res[sign] = n + '0';
 	res[count_nb(n)] = '\0';
 	return (res);
 }
