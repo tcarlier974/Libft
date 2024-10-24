@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:09:42 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 18:27:28 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:28:10 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = 0;
 	j = 0;
 	len = ft_strlen(s1) + ft_strlen(s2);
-	res = (char*)malloc(len + 1);
+	res = (char*)malloc((len + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
 	while (i < ft_strlen(s1) - 1)
@@ -35,6 +35,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		res[i] = s2[j];
 		j++;
 	}
-	res[len] = '\0';
+	res[i] = '\0';
 	return (res);
 }
