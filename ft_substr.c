@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:32:31 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 17:58:47 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:01:11 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,12 @@ char    *ft_substr(char const *s, unsigned int start, size_t len)
     char    *res;
     int     i;
 
+    if (start >= ft_strlen(s))
+    {
+        res = (char*)malloc(1);
+        res[0] = '\0';
+        return (res);
+    }
     res = (char*)malloc(len + 1);
     if (!res)
         return (NULL);
