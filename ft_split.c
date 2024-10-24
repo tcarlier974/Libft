@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:54:39 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/24 19:08:19 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/24 19:09:03 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strndup(char *s1, int len)
 	s2 = (char *)malloc(ft_strlen(s1) * sizeof(char) + 1);
 	if (!s2)
 		return (NULL);
-	while (s1[i] && i < len)
+	while (s1[i] && (int)i < len)
 	{
 		s2[i] = s1[i];
 		i++;
