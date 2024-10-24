@@ -28,6 +28,7 @@ SRC = ft_memset.c \
 			ft_tolower.c \
 			ft_strlcpy.c \
 			ft_calloc.c \
+			ft_substr.c \
 
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
@@ -50,4 +51,4 @@ fclean : clean
 re : fclean all
 
 dev :
-	make fclean;git add .; git commit -m 'auto update';git push;cd ../tester; make m;cd ../libft
+	make fclean;git add .; git commit -m 'auto update';git push;cd ../test;make;make f;cd ../libft
