@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 19:28:24 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 01:53:16 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 01:54:53 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_itoa(int n)
 
 	res = (char*)malloc(count_nb(n) * sizeof(char) + 1);
 	k = 0;
-	(long int)n;
+	n = (long int)n;
 	sign = 0;
 	if (n < 0)
 	{
