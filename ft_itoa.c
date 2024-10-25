@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 19:28:24 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 02:01:33 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 02:02:12 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int	count_nb(int n)
 	}
 	return (count + 1);
 }
+
 void	ft_sign(int *sign, long int *i, char **res)
 {
 	if (*i < 0)
@@ -49,7 +50,7 @@ char	*ft_itoa(int n)
 	int			k;
 	int			sign;
 
-	res = (char*)malloc(count_nb(n) * sizeof(char) + 1);
+	res = (char *)malloc(count_nb(n) * sizeof(char) + 1);
 	if (!res)
 		return (NULL);
 	i = n;
