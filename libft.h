@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:51:48 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 01:41:07 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 18:41:22 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,6 @@ int		ft_tolower(int c);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *str, int fd);
 #endif
