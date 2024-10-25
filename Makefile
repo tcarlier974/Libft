@@ -35,6 +35,7 @@ SRC = ft_memset.c \
 			ft_itoa.c \
 			ft_strmapi.c \
 			ft_putchar_fd.c \
+			ft_putstr_fd.c \
 
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
