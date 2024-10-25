@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:35:19 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 18:37:50 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 18:38:14 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void	ft_putstr_fd(char *str, int fd)
 		write(fd, &str[i], 1);
 		i++;
 	}
-	write(fd, '\0', 1);
+	write(fd, "\0", 1);
 }
