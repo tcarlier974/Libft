@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:43:32 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 18:49:35 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 18:50:20 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd((nb / 10), fd);
 		ft_putchar_fd((char)((nb % 10) + '0'), fd);
 	}
-	ft_putchar_fd((char)(nb + '0'), fd);
+	else
+		ft_putchar_fd((char)(nb + '0'), fd);
 }
