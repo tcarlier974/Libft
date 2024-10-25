@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:38:55 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 18:40:23 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 18:42:01 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl_fd(char *str, int fd)
 {
 	ft_putstr_fd(str, fd);
-	ft_putchar_fd(' ', fd);
+	ft_putchar_fd('\n', fd);
 }
