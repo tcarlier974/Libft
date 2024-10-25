@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 02:12:04 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 02:17:43 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/25 02:20:21 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char		*res;
+	char			*res;
 	unsigned int	i;
 
 	i = 0;
