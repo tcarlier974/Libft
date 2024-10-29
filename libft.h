@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:51:48 by tristan           #+#    #+#             */
-/*   Updated: 2024/10/25 18:41:22 by tristan          ###   ########.fr       */
+/*   Updated: 2024/10/29 16:22:35 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,12 @@
 # include <stdlib.h>
 # include <sys/types.h>
 # include <unistd.h>
+
+typedef struct	s_list
+{
+	void	*content;
+	struct s_list	*next;
+}	t_list;
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
