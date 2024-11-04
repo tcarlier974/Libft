@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:31:00 by tcarlier          #+#    #+#             */
-/*   Updated: 2024/11/04 19:41:41 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:42:00 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_lstsize(t_list *lst)
 	t_list	*c;
 
 	c = lst;
-	i = 0;
+	i = 1;
 	while (c->content)
 	{
 		i++;
