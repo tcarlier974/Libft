@@ -46,6 +46,7 @@ BONUS = ft_lstnew.c \
 			ft_lstadd_front.c \
 			ft_lstsize.c \
 			ft_lstlast.c \
+			ft_lstadd_back.c \
 
 OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(SRC:.c=.o) $(BONUS:.c=.o)
