@@ -38,9 +38,12 @@ SRC = ft_memset.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
-			ft_lstnew.c \
+
+
+BONUS = ft_lstnew.c \
 
 OBJ = $(SRC:.c=.o)
+OBJ_BONUS = $(SRC:.c=.o) $(BONUS:.c=.o)
 FLAGS = -Wall -Wextra -Werror
 
 .PHONY: all clean fclean re
@@ -51,6 +54,10 @@ all : libft.a
 libft.a :
 	gcc -I libft.h $(FLAGS) -c $(SRC)
 	ar rcs libft.a $(OBJ)
+
+bonus : clean
+	gcc -I libft.h $(FLAGS) -c $(SRC) $(BONUS)
+	ar rcs libft.a $(OBJ_BONUS)
 
 clean : 
 	rm -f libft.a
