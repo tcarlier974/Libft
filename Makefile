@@ -1,3 +1,5 @@
+NAME = libft.a
+
 SRC = ft_memset.c \
 			ft_bzero.c \
 			ft_memcpy.c \
@@ -49,19 +51,19 @@ FLAGS = -Wall -Wextra -Werror
 
 .PHONY: all clean fclean re
 
-all : libft.a
+all : $(NAME)
 	@true
 
-libft.a :
+$(NAME) :
 	gcc -I libft.h $(FLAGS) -c $(SRC)
-	ar rcs libft.a $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 bonus : clean
 	gcc -I libft.h $(FLAGS) -c $(SRC) $(BONUS)
-	ar rcs libft.a $(OBJ_BONUS)
+	ar rcs $(NAME) $(OBJ_BONUS)
 
 clean : 
-	rm -f libft.a
+	rm -f $(NAME)
 
 fclean : clean
 	rm -rf $(OBJ) $(OBJ_BONUS)

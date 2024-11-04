@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:54:39 by tristan           #+#    #+#             */
-/*   Updated: 2024/11/04 11:58:55 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 13:56:35 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ char	**ft_split(char const *s1, char c)
 		return (NULL);
 	while (k < count_words((char *)s1, c) && s1[s])
 	{
-		while (s1[s] == c)
+		while (s1[s] == c && s1[s])
 			s++;
 		e = s;
 		while (s1[e] != c && s1[e])
