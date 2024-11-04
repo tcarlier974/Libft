@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:44:17 by tcarlier          #+#    #+#             */
-/*   Updated: 2024/11/04 19:46:42 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 20:33:56 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
+	if (!lst)
+		return (lst);
 	while (lst->next)
 	{
 		lst = lst->next;
