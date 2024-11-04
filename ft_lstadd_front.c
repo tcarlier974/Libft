@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:24:45 by tcarlier          #+#    #+#             */
-/*   Updated: 2024/11/04 13:30:00 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 13:31:14 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int		i;
 	t_list	*next;
 
 	next = (*lst)->next;
