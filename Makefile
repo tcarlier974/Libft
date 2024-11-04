@@ -63,7 +63,7 @@ clean :
 	rm -f libft.a
 
 fclean : clean
-	rm -rf $(OBJ)
+	rm -rf $(OBJ) $(OBJ_BONUS)
 
 re : fclean all
 
