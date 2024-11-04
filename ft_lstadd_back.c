@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:35:06 by tcarlier          #+#    #+#             */
-/*   Updated: 2024/11/04 22:52:27 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 22:52:51 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	if (!lst)
 	{
-		*lst = ft_lstnew(new);
+		*lst = new;
 		return ;
 	}
 	last = ft_lstlast(*lst);
