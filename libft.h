@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:51:48 by tristan           #+#    #+#             */
-/*   Updated: 2024/11/04 22:51:14 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:25:05 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstnew(void *content);
+void	ft_lstdelone(t_list *lst, void (*del)(void *));
 #endif
