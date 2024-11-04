@@ -41,7 +41,7 @@ SRC = ft_memset.c \
 
 
 BONUS = ft_lstnew.c \
-			ft_lstadd_front \
+			ft_lstadd_front.c \
 
 OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(SRC:.c=.o) $(BONUS:.c=.o)
