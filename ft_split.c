@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:54:39 by tristan           #+#    #+#             */
-/*   Updated: 2024/11/04 14:17:49 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 14:18:16 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strndup(char *s1, int len)
 	size_t	i;
 
 	i = 0;
-	s2 = (char *)malloc(ft_strlen(s1) * sizeof(char) + 2);
+	s2 = (char *)malloc(ft_strlen(s1) * sizeof(char));
 	if (!s2)
 		return (NULL);
 	while (s1[i] && (int)i < len)
