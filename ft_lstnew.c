@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 16:19:19 by tristan           #+#    #+#             */
-/*   Updated: 2024/11/04 13:23:59 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:25:31 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list	*start = NULL;
+	t_list	*new;
 
-	start->content = (void *)malloc(sizeof(void *));
-	start->content = content;
-	start->next = NULL;
-	return (start);
+	new = malloc(sizeof(t_list));
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
