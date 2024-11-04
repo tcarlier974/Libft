@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 23:11:34 by tcarlier          #+#    #+#             */
-/*   Updated: 2024/11/04 23:25:47 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/04 23:28:22 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	temp = (*lst)->next;
 	while (*lst)
 	{
-		ft_lstdelone(*lst, del);
+		del((*lst)->content);
+		free(lst);
 		lst = &temp;
 		temp = (*lst)->next;
 	}
