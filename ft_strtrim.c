@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:30:04 by tristan           #+#    #+#             */
-/*   Updated: 2024/11/04 11:59:53 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/06 14:52:48 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	ft_incharset(char s, char const *charset)
 {
 	int	i;
 
+	if (!s)
+		return (0);
 	i = 0;
 	while (charset[i])
 	{
