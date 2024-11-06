@@ -6,7 +6,7 @@
 /*   By: tcarlier <tcarlier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:54:39 by tristan           #+#    #+#             */
-/*   Updated: 2024/11/04 14:18:50 by tcarlier         ###   ########.fr       */
+/*   Updated: 2024/11/06 14:50:07 by tcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ char	**ft_split(char const *s1, char c)
 
 	k = 0;
 	s = 0;
+	if (!s1 || !c)
+		return NULL;
 	res = (char **)malloc((count_words((char *)s1, c) + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
