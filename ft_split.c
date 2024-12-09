@@ -39,7 +39,7 @@ char	*ft_strndup(char *s1, int len)
 	size_t	i;
 
 	i = 0;
-	s2 = (char *)malloc((len + 1) * sizeof(char));
+	s2 = (char *)malloc((len + 2) * sizeof(char));
 	if (!s2)
 		return (NULL);
 	while (s1[i] && (int)i < len)
